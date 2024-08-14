@@ -6,7 +6,6 @@ x_todos = c()
 s_todos = c()
 n_total = c()
 
-
 # Crea vectores coordinados para procesar los datos
 for(dato in datos){
     if(dato != ".Random.seed"){
@@ -23,8 +22,8 @@ alpha = 0.01
 alpha2 = alpha / 2 # Alpha para región de rechazo
 
 # Medir área de Z (Región de rechazo)
-Z = 1 - pnorm(alpha) # Z_a
-Z2 = 1 - pnorm(alpha2) # Z_a/2
+Z = -qnorm(alpha) # Z_a
+Z2 = -qnorm(alpha2) # Z_a/2
 
 # Prueba cada par de datos posibles
 for(i in 1:5){
