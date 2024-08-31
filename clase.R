@@ -1,5 +1,6 @@
-install.packages("gtools")
-install.packages("combinat")
+# Instalar estas librerías con los siguientes comandos:
+# install.packages("gtools")
+# install.packages("combinat")
 
 library("combinat")
 library("gtools")
